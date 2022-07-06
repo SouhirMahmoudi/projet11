@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import LocalFetch from "../../utils/LocalFetch";
-import LocationCard from "./components/locationCard";
-import './Home.css'
+import LocationCard from "../../components/locationCard/LocationCard";
+import './home.scss'
 
 
 export default function Home() {

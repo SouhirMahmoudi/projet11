@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import './errorPage.css'
+import './errorPage.scss'
 
-export default function ErrorPage() {
+export default function Error() {
 
     return (
         <div className="errorpage">

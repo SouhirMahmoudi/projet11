@@ -1,11 +1,11 @@
-import { useState } from "react";
-import "./card.scss";
+
+import "./locationCard.scss";
 
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import logements from './logements.json';
 
-function Card(props) {
+export default function LocationCard(props) {
   return (
     <article style={{backgroundImage: `url('${logements.cover}')`}} className='card'>
       <NavLink className='card-link' to={`/`}>
@@ -16,4 +16,3 @@ function Card(props) {
 }
 
 
-export default Card;
