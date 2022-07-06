@@ -1,24 +1,19 @@
 import { useState } from "react";
 import "./card.scss";
 
-function Card(props){
-    const [visible, setVisibility]=useState(false);
-    function showHide(){
-        setVisibility(!visible);
-        console.log("...", visible)
-    }
-    function paragraphe(){
-        if (!visible) return;
-        return (<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolor officiis veniam omnis commodi laudantium harum ex, unde sequi nam consequatur, voluptas voluptatem est vel recusandae! At deserunt sint molestiae.</p>)
-    }
-    return (
-        <article className="card">
-            <h2 onClick={showHide}>{props.titre}</h2>
-            {paragraphe()}
-        </article>
+import React from 'react'
+import { NavLink } from 'react-router-dom';
+import logements from './logements.json';
+
+function Card(props) {
+  return (
+    <article style={{backgroundImage: `url('${logements.cover}')`}} className='card'>
+      <NavLink className='card-link' to={`/`}>
+        <p className="card-title">{logements.title}</p>
+      </NavLink>
+    </article>
     )
 }
-
 
 
 export default Card;
