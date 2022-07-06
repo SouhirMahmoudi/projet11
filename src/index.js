@@ -2,8 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import ErrorFound from './components/ErrorFound/ErrorFound'
-import Home from './pages/Home/Home'
+import ErrorPage from './pages/errorPage/ErrorPage'
+import Home from './pages/homePage/Home'
 import Header from './components/Header/Header'
 import './index.css'
 import LocationPage from './pages/LocationPage/LocationPage'
@@ -16,7 +16,7 @@ render(
         <Route exact path='/' component={Home} />
         <Route exact path='/locations/:id' component={LocationPage} />
         <Route exact path='/about' component={About} />
-        <Route component={ErrorFound} />
+        <Route component={ErrorPage} />
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')

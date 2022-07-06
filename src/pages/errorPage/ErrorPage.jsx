@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import './ErrorFound.css'
+import './errorPage.css'
 
-export default function ErrorFound() {
+export default function ErrorPage() {
 
     return (
-        <div className="errorfound">
+        <div className="errorpage">
             <h1>404</h1>
             <p>Oups! La page que vous demandez n'existe pas !</p>
             <Link className="backhome" to='/'>Retourner sur la page d'accueil</Link>
