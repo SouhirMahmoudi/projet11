@@ -1,5 +1,5 @@
 {
-  "name": "projet11",
+  "name": "y",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,17 @@
   },
   "devDependencies": {
     "sass": "^1.53.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouhirMahmoudi/projet11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SouhirMahmoudi/projet11/issues"
+  },
+  "homepage": "https://github.com/SouhirMahmoudi/projet11#readme"
 }
