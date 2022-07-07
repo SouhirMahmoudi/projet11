@@ -5,7 +5,7 @@ import Host from "./components/host/Host";
 import Dropdown from "./components/dropdown/Dropdown";
 import PictureShow from "./components/pictureShow/PictureShow";
 import Stars from "./components/stars/Stars";
-import Tags from "./components/Tags/Tags";
+import Tags from "./components/tags/Tags";
 import './locationPage.scss'
 
 export default function LocationPage() {

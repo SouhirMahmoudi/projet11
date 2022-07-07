@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './src/components/pictureShow/pictureShow.scss'
+import { useState } from "react"
+import "./pictureShow.scss"
 
 export default function PictureShow(props) {
 
@@ -28,8 +28,8 @@ export default function PictureShow(props) {
             <img className="picture" src={props.img && props.img[currentSlide]} alt="" />
             <div className="pictureShow-options">
                 <p className="pictureShow-state">{(currentSlide) ? currentSlide + 1 : 1}/{props.img && props.img.length}</p>
-                <button className={`pictureshow-prev ${(props.img && props.img.length === 1) ? "buttondisable" : ""}`} onClick={prevPicture}><img src="../../" /></button>
-                <button className={`pictureshow-next ${(props.img && props.img.length === 1) ? "buttondisable" : ""}`} onClick={nextPicture}><img src="../../next.png" /></button>
+                <button className={`pictureshow-prev ${(props.img && props.img.length === 1) ? "buttondisable" : ""}`} onClick={prevPicture}><img src="../../VectorleftArrow.svg"  alt=""/></button>
+                <button className={`pictureshow-next ${(props.img && props.img.length === 1) ? "buttondisable" : ""}`} onClick={nextPicture}><img src="../../VectorrightArrow.svg" alt="" /></button>
             </div>
         </div>
     )
