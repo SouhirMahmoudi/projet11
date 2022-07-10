@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {  Navigate, useParams } from 'react-router-dom'
-import LocalFetch from "../../utils/LocalFetch";
+import LocalFetch from "../../components/LocalFetch";
 import Host from "./components/host/Host";
 import Dropdown from "./components/dropdown/Dropdown";
 import PictureShow from "./components/pictureShow/PictureShow";
