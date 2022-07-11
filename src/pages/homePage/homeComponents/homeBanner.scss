@@ -1,0 +1,46 @@
+.banner {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 225px;
+    width: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+    }
+    
+    .message {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+    }
+  }
+  
+  @media screen and (max-width: $breakTablet) {
+    .banner {
+      height: 180px;
+  
+      .message {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 1rem;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+  
+  @media screen and (max-width: $breakPhone) {
+    .banner {
+      height: 110px;
+  
+     .message {
+        font-size: 1rem;
+      }
+    }
+  }
