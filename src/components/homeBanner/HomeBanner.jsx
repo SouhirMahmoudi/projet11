@@ -1,5 +1,5 @@
-import bannerHome from '../homePage/BannerHome.svg';
-import '../homePage/homeBanner.scss'
+import bannerHome from './BannerHome.svg';
+import './homeBanner.scss'
 
 
 export default  function HomeBanner() {
