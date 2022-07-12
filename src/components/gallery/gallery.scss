@@ -1,0 +1,18 @@
+@import "../../pages/base.scss";
+.gallery {
+  background: #f7f7f7;
+  border-radius: 25px;
+  margin-top: 43px;
+}
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  article{
+    margin-bottom: 50px;
+  }
+}

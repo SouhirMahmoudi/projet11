@@ -8,6 +8,7 @@ import Error from './pages/errorPage/Error'
 import Home from './pages/homePage/Home'
 import LocationPage from './pages/locationPage/LocationPage'
 import About from './pages/aboutPage/About'
+import '../src/pages/base.scss'
 
 const root = createRoot(document.getElementById("root"));
 root.render(

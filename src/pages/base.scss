@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
 $PrimaryFont: "Montserrat";
 $PimaryColor: rgba(255, 96, 96, 1);
 $breakPhone: 400px;
 $breakTablet: 850px;
+
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: $breakTablet) {
+  body {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: $breakPhone) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

@@ -1,4 +1,4 @@
-import bannerHome from './BannerHome.svg';
+import bannerHome from 'assets/banner.png';
 import './homeBanner.scss'
 
 
