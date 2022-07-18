@@ -1,11 +1,5 @@
 @import "../../pages/base.scss";
-.card {
-  height: 340px;
-  width: 340px;
-  left: 0px;
-  top: 0px;
-  border-radius: 10px;
-}
+
 .card-title {
   font-family: Montserrat;
   font-size: 18px;
@@ -14,10 +8,20 @@
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
-  padding-top: 293px;
+  padding-top: 268px;
   padding-left: 20px;
 }
 
 .card-link {
   text-decoration: none;
 }
+
+@media screen and (max-width: $breakTablet) {
+   
+}
+
+@media screen and (max-width: $breakPhone) {
+ 
+}
+
+

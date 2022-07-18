@@ -9,7 +9,7 @@ export default function Header() {
             <img src={logo} alt="Kasa LOGO" />
             <div className="navbar">
                 <Link to="/">Accueil</Link>
-                <Link to="/about">A propos</Link>
+                <Link to="/about">A Propos</Link>
             </div>
         </div>
     )

@@ -1,36 +1,50 @@
 @import "../../pages/base.scss";
 
 .header {
-    margin: 20px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-.navbar {
+  .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
 
-}
-
-.navbar a {
+  .navbar a {
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 24px;
     line-height: 142.6%;
-    color: #FF6060;
+    color: #ff6060;
     text-transform: uppercase;
-  
-  & :last-child {
-    margin-left: 10px;
-}
-}
+    padding-left: 57px;
+  }
 }
 @media screen and (max-width: $breakTablet) {
-  
+  .header {
+    img {
+      height: 47px;
+      width: 145px;
+    }
+    .navbar a {
+      font-size: 12px;
+      padding-left: 37px;
+    }
   }
-  
-  @media screen and (max-width: $breakPhone) {
-   
+}
+
+@media screen and (max-width: $breakPhone) {
+  .header {
+    img {
+      height: 47px;
+      width: 145px;
+    }
+
+    .navbar a {
+      font-size: 12px;
+      padding-left: 27px;
+    }
   }
+}
