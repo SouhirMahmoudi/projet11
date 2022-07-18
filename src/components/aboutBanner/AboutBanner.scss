@@ -1,0 +1,21 @@
+@import "../../pages/base.scss";
+.banner {
+  margin-top: 68.74px;
+  border-radius: 25px;
+  height: 225px;
+  width: 100%;
+}
+
+@media screen and (max-width: $breakTablet) {
+  .banner {
+    height: 180px;
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: $breakPhone) {
+  .banner {
+    height: 110px;
+    margin-top: 28px;
+  }
+}
