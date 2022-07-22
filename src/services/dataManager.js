@@ -8,8 +8,7 @@ function getAll(){
 
 
 function getOne(idLocation){
-	const result = data.filter(obj=> obj.id === idLocation) ;
-	return result;
+return data.find((elt) => elt.id === idLocation);
 }
 
 	

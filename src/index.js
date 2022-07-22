@@ -8,7 +8,9 @@ import About from './pages/aboutPage/AboutPage'
 import '../src/pages/base.scss'
 import ErrorPage from './pages/errorPage/ErrorPage';
 
+
 const root = createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Router>
