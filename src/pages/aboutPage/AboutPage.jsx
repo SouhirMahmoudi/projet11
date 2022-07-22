@@ -15,6 +15,7 @@ export default function AboutPage(){
           key={about.title}
           title={about.title}
           text={about.text}
+          folded={true}
           />
           ))}
           </div>

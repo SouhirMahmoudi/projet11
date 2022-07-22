@@ -1,5 +1,37 @@
 @import "../../pages/base.scss";
 
+
+.card{
+  display: grid;
+  grid-template-areas: "card";
+
+  & > *{
+    grid-area: card;
+    border-radius: 1rem;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    display: flex;
+    background: linear-gradient(180deg, rgb(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+    align-items: end;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    width:  calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+/*
 .card-title {
   font-family: Montserrat;
   font-size: 18px;
@@ -25,3 +57,4 @@
 }
 
 
+*/

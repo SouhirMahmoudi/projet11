@@ -1,35 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import './collapsible.scss'
+
+
+function Collapsible(props) {
+  const [folded, setFolded] = useState(props.folded);
+  function foldUnfold() {
+    setFolded(!folded);
+  }
+
+  return (
+    <div className="Collapsible">
+      <button type="button" class="collapsible" onClick={foldUnfold}>{props.title}</button>
+      <div class="content">
+        {!folded && <p>{props.text}</p>}
+      </div>
+    </div>
+  );
+}
 Collapsible.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
+  folded: PropTypes.bool,
 };
 
-export default  function Collapsible(props) {
-    return(
-      <div className="Collapsible">
-      <button type="button" class="collapsible">{props.title}</button>
-      <div class="content">
-        <p>{props.text}</p>
-      </div>
-      </div>
-      );
-
-      
-    }
-
-    var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+export default Collapsible
