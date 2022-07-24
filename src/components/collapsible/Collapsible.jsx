@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import './collapsible.scss'
 
 
@@ -12,16 +11,12 @@ function Collapsible(props) {
   return (
     <div className="Collapsible">
       <button type="button" className="collapsible" onClick={foldUnfold}>{props.title}</button>
-      <div class="content">
+      <div className="content">
         {!folded && <p>{props.text}</p>}
       </div>
     </div>
   );
 }
-Collapsible.propTypes = {
-  title: PropTypes.string,
-  text: PropTypes.string,
-  folded: PropTypes.bool,
-};
+
 
 export default Collapsible

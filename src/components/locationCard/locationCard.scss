@@ -1,32 +1,23 @@
-.collapseHouseBloc {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    justify-content: space-between;
-    div {
-      width: 100%;
-    }
-  }
-  
-  .menuhome {
+@import "../../pages/base.scss";
+  .locationCard {
     display: flex;
     justify-content: space-between;
-    color: $colorprimary;
-    &__title {
+    color: $PimaryColor;
+    .title {
       font-size: 1.5rem;
       margin-bottom: 10px;
     }
-    &__location,
-    &__name {
+    .location,
+   .name {
       font-size: 0.75rem;
     }
-    &__tags {
+   .tags {
       display: flex;
       margin-top: 20px;
     }
-    &__tag {
+   .tag {
       margin-right: 10px;
-      background-color: $colorprimary;
+      background-color:$SecondaryBackground;
       color: white;
       width: 115px;
       height: 25px;
@@ -35,52 +26,53 @@
       line-height: 25px;
       text-align: center;
     }
-    &__pp {
+   .picture {
       margin-left: 10px;
       width: 64px;
       border-radius: 50%;
+      object-fit: cover;
     }
-    &__host {
+   .host {
       display: flex;
       align-items: center;
     }
-    &__profil {
+   .profil {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
     }
-    &__name {
+   .name {
       text-align: end;
     }
   }
   
-  @media screen and (max-width: $breakpad) {
+  @media screen and (max-width: $breakTablet) {
     .menuhome {
       flex-direction: column;
-      &__title {
+     .title {
         font-size: 1.1rem;
       }
-      &__location {
+     .location {
         font-size: 0.6rem;
       }
-      &__tag {
+     .tag {
         font-size: 0.4rem;
         width: 84px;
         height: 18px;
         line-height: 18px;
       }
-      &__name {
+     .name {
         font-size: 0.6rem;
       }
-      &__pp {
+     .picture {
         width: 45px;
       }
-      &__profil {
+     .profil {
         margin-top: 1rem;
         flex-direction: row-reverse;
       }
-      &__rating svg {
+     .rating svg {
         width: 22px;
         height: 22px;
       }
@@ -92,18 +84,18 @@
     }
   }
   
-  @media screen and (max-width: $breakphone) {
+  @media screen and (max-width: $breakPhone) {
     .menuhome {
-      &__title {
+     .title {
         font-size: 0.75rem;
       }
-      &__pp {
+     .picture {
         width: 32px;
       }
-      &__name {
+     .name {
         font-size: 0.5rem;
       }
-      &__rating svg {
+     .rating svg {
         width: 15px;
         height: 15px;
       }

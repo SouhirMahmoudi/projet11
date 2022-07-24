@@ -1,17 +1,29 @@
 import React from "react";
-import Star from 'assets/star.svg'
+import "./rating.scss";
+import star from "assets/starR.png"
 
-export default function Rating(props){
-    const stars = [];
-    let color = "";
-    for (let i = 0; i < 5; i++) {
-      props.rating > i ? (color = "#FF6060") : (color = "#E3E3E3");
-      stars.push(<Star fill={color} key={i} />);
-    }
+export default function Rating(props) {
+  let stars = [];
+  for (let i = 1; i <6; i++) {
+    let starColor;
+    i > parseInt(props.rating) ? starColor = "Gray" : starColor = "Red";
 
-    return <>{stars}</>;
+    stars.push(
+      <span key={i}>
+        <img
+          src= {star}
+          className={starColor}
+          alt="note du logement "
+        />
+      </span>
+    );
   }
+    return stars;
 
-    
+
+
+ 
+}
+
 
 

@@ -1,0 +1,36 @@
+@import "../../pages/base.scss";
+
+.collapseHouseBloc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  justify-content: space-between;
+  div {
+    width: 100%;
+  }
+  .Collapsible {
+    .collapsible {
+      background-color: $SecondaryBackground;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      font-size: 18px!important;
+    }
+
+    .content {
+      padding: 0 18px;
+      // display: none;
+      overflow: hidden;
+      background-color: $PrimaryBackground;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 96, 96, 1);
+    }
+   
+  }
+}
