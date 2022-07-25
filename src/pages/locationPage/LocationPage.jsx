@@ -6,7 +6,7 @@ import { getOne } from "services/dataManager";
 import ErrorPage from "pages/errorPage/ErrorPage";
 import Collapsible from "components/collapsible/Collapsible";
 import Footer from "components/footer/Footer";
-import Carrousel from "components/Carroussel/Caroussel";
+import Carrousel from "components/carroussel/Caroussel";
 import { useParams } from "react-router-dom";
 import "./locationPage.scss"
 
@@ -15,7 +15,6 @@ export default function LocationPage() {
   const id = useParams();
   const idlocation =id.id;
   const home = getOne(idlocation);
-  console.log (id,idlocation);
  return home === undefined ? (
     <ErrorPage />
     
