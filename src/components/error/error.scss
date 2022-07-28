@@ -1,0 +1,66 @@
+@import "../../pages/base.scss";
+
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $PimaryColor;
+  h1 {
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0px;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin:0px;
+  }
+  a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 160px;
+    color:$PimaryColor !important;
+  }
+}
+
+@media screen and (max-width: $breakTablet) {
+  .errorpage {
+    h1 {
+      font-size: 100px;
+    }
+    p {
+      margin-top: 11px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: $breakPhone) {
+  .errorpage {
+    h1 {
+      font-size: 96px;
+    }
+    p {
+      font-size:18px;
+      margin-top:-155px;
+      line-height: 25.67px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+}

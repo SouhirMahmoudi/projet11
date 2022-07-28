@@ -8,29 +8,106 @@
   div {
     width: 100%;
   }
-  .Collapsible {
-    .collapsible {
-      background-color: $SecondaryBackground;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      font-size: 18px!important;
-    }
+}
 
-    .content {
-      padding: 0 18px;
-      // display: none;
-      overflow: hidden;
-      background-color: $PrimaryBackground;
-      font-family: Montserrat;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 34px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: rgba(255, 96, 96, 1);
+.menuhome {
+  display: flex;
+  justify-content: space-between;
+  color: $colorprimary;
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  &__location,
+  &__name {
+    font-size: 0.75rem;
+  }
+  &__tags {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__tag {
+    margin-right: 10px;
+    background-color: $colorprimary;
+    color: white;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__pp {
+    margin-left: 10px;
+    width: 64px;
+    border-radius: 50%;
+  }
+  &__host {
+    display: flex;
+    align-items: center;
+  }
+  &__profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__name {
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: $breakpad) {
+  .menuhome {
+    flex-direction: column;
+    &__title {
+      font-size: 1.1rem;
     }
-   
+    &__location {
+      font-size: 0.6rem;
+    }
+    &__tag {
+      font-size: 0.4rem;
+      width: 84px;
+      height: 18px;
+      line-height: 18px;
+    }
+    &__name {
+      font-size: 0.6rem;
+    }
+    &__pp {
+      width: 45px;
+    }
+    &__profil {
+      margin-top: 1rem;
+      flex-direction: row-reverse;
+    }
+    &__rating svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .collapseHouseBloc {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: $breakphone) {
+  .menuhome {
+    &__title {
+      font-size: 0.75rem;
+    }
+    &__pp {
+      width: 32px;
+    }
+    &__name {
+      font-size: 0.5rem;
+    }
+    &__rating svg {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
