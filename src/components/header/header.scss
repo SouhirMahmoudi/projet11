@@ -3,7 +3,19 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
 
+
+
+  img {
+    width: 210.32px;
+    height: 68px;
+    object-fit: cover;
+  }
   .navbar {
     display: flex;
     align-items: center;
@@ -18,7 +30,6 @@
     font-size: 24px;
     line-height: 142.6%;
     color: #ff6060;
-    text-transform: uppercase;
     padding-left: 57px;
     &.active {
       text-decoration: underline;
@@ -27,29 +38,39 @@
 }
 @media screen and (max-width: $breakTablet) {
   .header {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+  
     img {
       height: 47px;
       width: 145px;
       object-fit: cover;
     }
-    .navbar a {
+    .navbar .lien {
       font-size: 12px;
       padding-left: 37px;
+      text-transform: uppercase;
     }
   }
 }
 
 @media screen and (max-width: $breakPhone) {
   .header {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+  
     img {
       height: 47px;
       width: 145px;
       object-fit: cover;
     }
 
-    .navbar a {
+    .navbar .lien {
       font-size: 12px;
       padding-left: 27px;
+      text-transform: uppercase;
     }
   }
 }

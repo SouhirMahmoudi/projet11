@@ -4,6 +4,7 @@ import AboutBanner from "components/aboutBanner/AboutBanner"
 import Collapsible from "components/collapsible/Collapsible";
 import dataAbout from "./dataAbout";
 import "./aboutPage.scss"
+import Footer from "components/footer/Footer";
 export default function AboutPage(){
 
     return(
@@ -22,7 +23,7 @@ export default function AboutPage(){
           />
           ))}
           </div>
-   
+   <Footer/>
 </React.Fragment>
 
     );

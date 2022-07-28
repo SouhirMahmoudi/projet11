@@ -4,15 +4,20 @@
   margin-top: 68.74px;
   border-radius: 25px;
   height: 225px;
-  width: 100%;
+  width: 86%;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Montserrat";
   img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     background: #000000;
     filter: brightness(0.6);
   }
 
-  .message {
+  p.message {
     font-size: 48px;
     font-weight: 500;
     line-height: 68px;
@@ -28,9 +33,13 @@
 @media screen and (max-width: $breakTablet) {
   .banner {
     height: 180px;
-    margin-top: 28px;
-
-    .message {
+    margin-bottom: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+    img {
+      width: 90%;
+    }
+    p.message {
       font-size: 24px;
       line-height: 100%;
     }
@@ -41,10 +50,18 @@
   .banner {
     height: 110px;
     margin-top: 28px;
-
-    .message {
+    margin-left: 20px;
+    margin-right: 20px;
+    img {
+      width: 90%;
+    }
+    p.message {
       font-size: 24px;
+      font-weight: 500;
       line-height: 100%;
+      text-align: left;
+      padding-left: 16px;
+      top: 12%;
     }
   }
 }
