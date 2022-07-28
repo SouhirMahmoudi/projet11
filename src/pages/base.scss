@@ -7,24 +7,33 @@ $SecondaryBackground:#FF6060;
 $breakPhone: 722px;
 $breakTablet: 900px;
 
-body {
-  margin-left: 100px;
-  margin-right: 100px;
+.header{
   margin-top: 20px;
   font-family: 'Montserrat';
-  
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.gallery,
+.banner {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Montserrat';
 }
 
 @media screen and (max-width: $breakTablet) {
-  body {
+  .gallery,
+  .banner {
     margin-left: 60px;
     margin-right: 60px;
+    font-family: 'Montserrat';
   }
 }
 
 @media screen and (max-width: $breakPhone) {
-  body {
+  .gallery,
+  .banner {
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'Montserrat';
   }
 }

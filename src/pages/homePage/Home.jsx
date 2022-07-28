@@ -6,7 +6,8 @@ import Gallery from 'components/gallery/Gallery'
 export default function Home() {
   return (
     <React.Fragment>
-      <Header />
+       <Header
+    current={1}/>
       <HomeBanner />
       <Gallery />
       <Footer />

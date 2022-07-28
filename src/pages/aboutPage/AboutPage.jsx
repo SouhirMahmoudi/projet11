@@ -3,11 +3,13 @@ import Header from "components/header/Header";
 import AboutBanner from "components/aboutBanner/AboutBanner"
 import Collapsible from "components/collapsible/Collapsible";
 import dataAbout from "./dataAbout";
+import "./aboutPage.scss"
 export default function AboutPage(){
 
     return(
 <React.Fragment>
-    <Header />
+    <Header
+    current={0}/>
     <AboutBanner/>
     <div className="AboutCollapsible">
     {dataAbout.map((about) => (
@@ -15,6 +17,7 @@ export default function AboutPage(){
           key={about.title}
           title={about.title}
           text={about.text}
+          rotate={true}
           folded={true}
           />
           ))}

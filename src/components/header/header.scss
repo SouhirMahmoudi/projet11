@@ -10,7 +10,7 @@
     justify-content: space-between;
   }
 
-  .navbar a {
+  .lien {
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
@@ -20,6 +20,9 @@
     color: #ff6060;
     text-transform: uppercase;
     padding-left: 57px;
+    &.active {
+      text-decoration: underline;
+    }
   }
 }
 @media screen and (max-width: $breakTablet) {
