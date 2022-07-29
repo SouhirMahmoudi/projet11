@@ -37,9 +37,15 @@ export default function LocationPage() {
 
 
     <div className="collapseHouseBloc">
-      <Collapsible text={home.description} title="Description" />
-      <Collapsible text={home.equipments} title="Équipements" />
+      <div className="description">
+      <Collapsible  folded={true} type={false} text={home.description} title="Description" /> 
+      </div>
+      <div className="equipement">
+      <Collapsible  folded={true} type={true} text={home.equipments} title="Équipements" />
+      </div>
     </div>
+
+
     <Footer />
     </React.Fragment>
 );

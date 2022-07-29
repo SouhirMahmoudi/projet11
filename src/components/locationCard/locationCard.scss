@@ -1,103 +1,112 @@
 @import "../../pages/base.scss";
-  .locationCard {
+.locationCard {
+  display: flex;
+  justify-content: space-between;
+  color: $PimaryColor;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .location,
+  .name {
+    font-size: 0.75rem;
+  }
+  .tags {
     display: flex;
+    margin-top: 20px;
+  }
+  .tag {
+    margin-right: 10px;
+    background-color: $SecondaryBackground;
+    color: white;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    line-height: 25px;
+    text-align: center;
+  }
+  .picture {
+    margin-left: 10px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .host {
+    display: flex;
+    align-items: center;
+  }
+  .profil {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    color: $PimaryColor;
+    align-items: flex-end;
+  }
+  .name {
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: $breakTablet) {
+  .locationCard{
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
     .title {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
+      font-size: 1.1rem;
     }
-    .location,
-   .name {
+    .location {
+      font-size: 0.6rem;
+    }
+    .tag {
+      font-size: 0.4rem;
+      width: 84px;
+      height: 18px;
+      line-height: 18px;
+    }
+    .name {
+      font-size: 0.6rem;
+    }
+    .picture {
+      width: 45px;
+    }
+    .profil {
+      margin-top: 1rem;
+      flex-direction: row-reverse;
+    }
+    .rating svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .collapseHouseBloc {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: $breakPhone) {
+  .locationCard {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -90px;
+    .title {
       font-size: 0.75rem;
     }
-   .tags {
-      display: flex;
-      margin-top: 20px;
+    .picture {
+      width: 32px;
     }
-   .tag {
-      margin-right: 10px;
-      background-color:$SecondaryBackground;
-      color: white;
-      width: 115px;
-      height: 25px;
-      border-radius: 10px;
+    .name {
       font-size: 0.5rem;
-      line-height: 25px;
-      text-align: center;
     }
-   .picture {
-      margin-left: 10px;
-      width: 64px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-   .host {
-      display: flex;
-      align-items: center;
-    }
-   .profil {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-   .name {
-      text-align: end;
+    .rating svg {
+      width: 15px;
+      height: 15px;
     }
   }
-  
-  @media screen and (max-width: $breakTablet) {
-    .menuhome {
-      flex-direction: column;
-     .title {
-        font-size: 1.1rem;
-      }
-     .location {
-        font-size: 0.6rem;
-      }
-     .tag {
-        font-size: 0.4rem;
-        width: 84px;
-        height: 18px;
-        line-height: 18px;
-      }
-     .name {
-        font-size: 0.6rem;
-      }
-     .picture {
-        width: 45px;
-      }
-     .profil {
-        margin-top: 1rem;
-        flex-direction: row-reverse;
-      }
-     .rating svg {
-        width: 22px;
-        height: 22px;
-      }
-    }
-    .collapseHouseBloc {
-      flex-direction: column;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-  }
-  
-  @media screen and (max-width: $breakPhone) {
-    .menuhome {
-     .title {
-        font-size: 0.75rem;
-      }
-     .picture {
-        width: 32px;
-      }
-     .name {
-        font-size: 0.5rem;
-      }
-     .rating svg {
-        width: 15px;
-        height: 15px;
-      }
-    }
-  }
+}

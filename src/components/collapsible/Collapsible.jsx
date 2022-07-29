@@ -5,6 +5,7 @@ import React, { useState } from "react";
 function Collapsible(props) {
   const [folded, setFolded] = useState(props.folded);
   const [rotate, setRotate] = useState(props.rotate);
+  const equipments =props.type;
   function FoldUnfold() {
     setFolded(!folded);
   }
@@ -51,7 +52,12 @@ function Collapsible(props) {
         </div>
       </div>
       <div>
-        {!folded && <p className="content">{props.text}</p>}
+        {!folded && !equipments && <p className="content">{props.text}</p>}
+      </div>
+      <div>
+        {!folded && equipments && <ul className="content"> {props.text.map((equipment) => (
+                    <li key={equipment}> {equipment} </li>)) }</ul>}
+                    
       </div>
      <div>
         {folded && <p className="contentInvisible"></p>}
