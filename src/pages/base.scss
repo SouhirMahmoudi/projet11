@@ -10,4 +10,9 @@ $breakTablet: 900px;
 body{
   margin:0px;
   font-family: Montserrat;
+  padding:10px 10%;
+  @media screen and (max-width: $breakPhone) {
+    padding:10px 2%;
+}
+
 }
