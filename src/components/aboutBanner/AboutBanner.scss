@@ -4,9 +4,8 @@
   margin-top: 68.74px;
   border-radius: 25px;
   height: 225px;
-  width: 86%;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 100%;
+  
   font-family: "Montserrat";
   img {
     object-fit: cover;
@@ -22,7 +21,6 @@
     font-weight: 500;
     line-height: 68px;
     letter-spacing: 0em;
-    position: absolute;
     top: 19%;
     width: 100%;
     text-align: center;
@@ -34,8 +32,7 @@
   .banner.about{
     height: 180px;
     margin-bottom: 28px;
-    margin-left: 50px;
-    margin-right: 50px;
+   
     img {
       width: 100%;
     }
@@ -50,10 +47,9 @@
   .banner.about {
     height: 110px;
     margin-top: 28px;
-    margin-left: 20px;
-    margin-right: 20px;
+   
     img {
-      width: 104%;
+      width: 100%;
     }
     p.message {
       font-size: 24px;
