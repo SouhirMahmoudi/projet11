@@ -58,7 +58,7 @@ export default function Carrousel(props) {
           return (
             <div className={index === current ? 'slide active' : 'slide'} key={index}>
               {index === current && (<img src={slide} key={slide} alt="" />)}
-              {index === current && <span className="pictureOrder"> {index + "/" + length}</span>}
+              {index === current && <span className="pictureOrder"> {(index +1)  + "/" + length   }</span>}
             </div>
           )
         })}
