@@ -11,6 +11,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     article {
       height: 340px;
@@ -23,12 +25,11 @@
 
 @media screen and (max-width: $breakTablet) {
   .gallery {
- 
-
     .articles {
-     
       padding-top: 35px;
       justify-content: center;
+      padding-left: 0px;
+      padding-right: 0px;
 
       article {
         height: 255px;
@@ -45,11 +46,11 @@
     background: transparent;
     border-radius: 25px;
     margin-top: 22px;
-  
 
     .articles {
-      
       padding-top: 22px;
+      padding-left: 0px;
+      padding-right: 0px;
 
       article {
         height: 255px;
