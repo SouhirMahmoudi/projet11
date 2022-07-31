@@ -26,8 +26,8 @@
       position: absolute;
       height: 32.402400970458984px;
       width: 24px;
-      left: 567px;
-      top: 222px;
+      left: 50%;
+      top: 90%;
       font-family: Montserrat;
       font-size: 18px;
       font-weight: 500;
@@ -59,6 +59,9 @@
     .slide.active {
       img {
         width: 100%;
+      }
+      span {
+        top: 270px;
       }
     }
     svg.left-button,
