@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export default function Header(props) {
 
-   
+
     const [isActive, setIsActive] = useState(false);
     function SetActive() {
         setIsActive(!isActive)
@@ -19,8 +19,10 @@ export default function Header(props) {
         <div className="header">
             <img src={logo} alt="Kasa LOGO" />
             <div className="navbar">
-                <Link className={props.current === 1 || isActive ? 'lien active' : 'lien'} onClick={SetActive} to="/">Accueil</Link>
-                <Link className={props.current === 0 ||isActive2 ? 'lien active' : 'lien'} onClick={SetActive2} to="/about">A Propos</Link>
+                <Link className={props.current === 1 || isActive ? 'lien active' : 'lien'}
+                    onClick={SetActive} to="/">Accueil</Link>
+                <Link className={props.current === 0 || isActive2 ? 'lien active' : 'lien'}
+                    onClick={SetActive2} to="/about">A Propos</Link>
             </div>
         </div>
     )
