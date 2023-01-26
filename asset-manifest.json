@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/SouhirMahmoudi/projet11/static/css/main.adebb2c4.css",
+    "main.js": "/SouhirMahmoudi/projet11/static/js/main.d7fb8950.js",
+    "static/js/787.81588d33.chunk.js": "/SouhirMahmoudi/projet11/static/js/787.81588d33.chunk.js",
+    "static/media/bannerAbout.png": "/SouhirMahmoudi/projet11/static/media/bannerAbout.ed819f2cc2faefb4fba2.png",
+    "static/media/banner.png": "/SouhirMahmoudi/projet11/static/media/banner.40371f11171ba050e175.png",
+    "index.html": "/SouhirMahmoudi/projet11/index.html",
+    "main.adebb2c4.css.map": "/SouhirMahmoudi/projet11/static/css/main.adebb2c4.css.map",
+    "main.d7fb8950.js.map": "/SouhirMahmoudi/projet11/static/js/main.d7fb8950.js.map",
+    "787.81588d33.chunk.js.map": "/SouhirMahmoudi/projet11/static/js/787.81588d33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adebb2c4.css",
+    "static/js/main.d7fb8950.js"
+  ]
+}
