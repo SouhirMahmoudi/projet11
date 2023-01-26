@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./header.scss";
 import logo from 'assets/logo.png'
 import { useState } from 'react';
+import PropTypes from "prop-types";
 
 export default function Header(props) {
 
@@ -28,3 +29,8 @@ export default function Header(props) {
     )
 
 }
+Header.propTypes = {
+    current : PropTypes.number,
+   
+  
+  }

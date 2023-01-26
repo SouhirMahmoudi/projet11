@@ -1,3 +1,4 @@
+import React from 'react';
 import bannerAbout from 'assets/bannerAbout.png';
 import './AboutBanner.scss'
 

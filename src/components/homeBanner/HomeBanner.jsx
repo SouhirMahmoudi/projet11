@@ -1,3 +1,4 @@
+import React from 'react';
 import bannerHome from 'assets/banner.png';
 import './homeBanner.scss'
 

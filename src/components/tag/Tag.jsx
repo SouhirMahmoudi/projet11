@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 
 export default function Tag(props){
     
@@ -9,4 +10,7 @@ export default function Tag(props){
     )
 
 
+}
+Tag.propTypes={
+tag: PropTypes.string
 }

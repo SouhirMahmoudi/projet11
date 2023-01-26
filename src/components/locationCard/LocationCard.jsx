@@ -1,6 +1,8 @@
+import React from "react";
 import Rating from "components/rating/Rating";
 import "./locationCard.scss"
 import Tag from "components/tag/Tag";
+import PropTypes from "prop-types";
 
 export default function LocationCard(props){
  
@@ -40,5 +42,13 @@ export default function LocationCard(props){
       </div>
     </div>
   );
+}
+LocationCard.propTypes = {
+  title : PropTypes.string,
+  rating:  PropTypes.number,
+  host: PropTypes.object,
+  location: PropTypes.string, 
+  tags:PropTypes.object 
+
 }
 

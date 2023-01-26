@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import PropTypes from "prop-types";
 
 
 function Collapsible(props) {
@@ -66,5 +66,13 @@ function Collapsible(props) {
   );
 }
 
+Collapsible.propTypes = {
+  folded : PropTypes.boolean,
+  rotate:  PropTypes.boolean,
+  type: PropTypes.boolean,
+  text: PropTypes.string, 
+  title:PropTypes.string 
+
+}
 
 export default Collapsible
